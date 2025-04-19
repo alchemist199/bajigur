@@ -7,15 +7,15 @@ export default function Home() {
       <div className="max-w-xl w-full text-center">
         <div className="flex justify-center mb-6">
           <Image
-            src="/photo_2025-02-07_12-29-38.jpg"
+            src="/profile.jpg"
             alt="Kris Profile"
             width={150}
             height={150}
             className="rounded-full border-4 border-white"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Muhamad Kris Purnama</h1>
-        <p className="text-lg text-gray-300 mb-4">Pekerjaan: Rebahan</p>
+        <h1 className="text-3xl font-bold mb-2">Muhamad Kris</h1>
+        <p className="text-lg text-gray-300 mb-4">Pekerjaan: maling jambu monyet</p>
         <blockquote className="italic text-yellow-300 mb-6">
           "Ingat kata-kata Pascol: kau akan dihargai jika kau mythic immortal bujank inam, alakon."
         </blockquote>
