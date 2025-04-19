@@ -1,59 +1,40 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-800 p-6 md:p-16">
-      <section className="text-center">
-        <div className="flex justify-center">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 text-white p-8">
+      <div className="max-w-xl w-full text-center">
+        <div className="flex justify-center mb-6">
           <Image
-            src="/profile.jpg"
-            alt="Profile"
+            src="/photo_2025-02-07_12-29-38.jpg"
+            alt="Kris Profile"
             width={150}
             height={150}
-            className="rounded-full border-4 border-gray-300"
+            className="rounded-full border-4 border-white"
           />
         </div>
-        <h1 className="text-4xl font-bold mt-6">krisxyz</h1>
-        <p className="text-lg mt-2">aku adalah siapa.</p>
+        <h1 className="text-3xl font-bold mb-2">Muhamad Kris Purnama</h1>
+        <p className="text-lg text-gray-300 mb-4">Pekerjaan: Rebahan</p>
+        <blockquote className="italic text-yellow-300 mb-6">
+          "Ingat kata-kata Pascol: kau akan dihargai jika kau mythic immortal bujank inam, alakon."
+        </blockquote>
 
-        <div className="flex justify-center gap-4 mt-4 text-2xl text-gray-600">
-          <a href="https://github.com/alchemist199" target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-          <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
-          <a href="mailto:tesnetaddict@email.com">
-            <FaEnvelope />
-          </a>
-        </div>
-      </section>
-
-      <section className="mt-20 max-w-2xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">tentang saya</h2>
-        <p>
-          hai, aku pernah bermimpi jadi kangkung, kadang juga aku kalo lagi ngelamun, pernah kepikiran jadi asbak.
-        </p>
-      </section>
-
-      <section className="mt-20 max-w-2xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Proyek</h2>
-        <ul className="space-y-4">
-          <li className="border p-4 rounded-lg shadow hover:shadow-md transition">
-            <a href="#" className="text-lg font-medium">Kuli 1</a>
-            <p className="text-sm text-gray-600">kuli daily.</p>
-          </li>
-          <li className="border p-4 rounded-lg shadow hover:shadow-md transition">
-            <a href="#" className="text-lg font-medium">Kuli 2</a>
-            <p className="text-sm text-gray-600">Masih dengan kuli.</p>
-          </li>
+        <h2 className="text-2xl font-semibold mb-3">Sosial Media</h2>
+        <ul className="space-y-2">
+          <li><Link href="https://github.com/alchemist199" className="text-blue-400 hover:underline">GitHub</Link></li>
+          <li><Link href="https://instagram.com/helimburg_" className="text-pink-400 hover:underline">Instagram</Link></li>
+          <li><Link href="https://twitter.com/krisxyzzz" className="text-blue-300 hover:underline">Twitter</Link></li>
+          <li><span className="text-gray-400">Discord: 1024319884907261992</span></li>
         </ul>
-      </section>
 
-      <footer className="text-center text-sm text-gray-500 mt-20">
-        &copy; {new Date().getFullYear()} krisxyz. Dibuat dengan Next.js
-      </footer>
+        <h2 className="text-2xl font-semibold mt-8 mb-3">Project</h2>
+        <div className="bg-gray-800 p-4 rounded-lg">
+          <h3 className="text-xl font-bold text-green-300 mb-1">REKAP AIRDROP 2025 BY GANTENG KRONIS</h3>
+          <p className="text-gray-300 mb-2">Sebuah rekapan calon pundi pundi keikhlasan dari ganteng kronis.</p>
+          <Link href="https://linen-brie-a57.notion.site/REKAP-AIRDROP-2025-BY-GANTENG-KRONIS-1da9bb97c6a48049bd9ccb0eeb49c0fc" className="text-indigo-400 hover:underline">Lihat di Notion</Link>
+        </div>
+      </div>
     </main>
   );
 }
