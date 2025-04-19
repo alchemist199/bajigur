@@ -25,13 +25,14 @@ export default function Home() {
           <li><Link href="https://github.com/alchemist199" className="text-blue-400 hover:underline">GitHub</Link></li>
           <li><Link href="https://instagram.com/helimburg_" className="text-pink-400 hover:underline">Instagram</Link></li>
           <li><Link href="https://twitter.com/krisxyzzz" className="text-blue-300 hover:underline">Twitter</Link></li>
-          <li><span className="text-gray-400">Discord: 1024319884907261992</span></li>
+          <li><span className="text-gray-400">Discord: pumpkidss</span></li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-8 mb-3">Project</h2>
         <div className="bg-gray-800 p-4 rounded-lg">
           <h3 className="text-xl font-bold text-green-300 mb-1">REKAP AIRDROP 2025 BY GANTENG KRONIS</h3>
-          <p className="text-gray-300 mb-2">Sebuah rekapan calon pundi pundi keikhlasan dari ganteng kronis.</p>
+          <p className="text-gray-300 mb-2">Sebuah rekapan calon pundi pundi keikhlasan dari ganteng kronis,
+            klik dibawah adik adik.</p>
           <Link href="https://linen-brie-a57.notion.site/REKAP-AIRDROP-2025-BY-GANTENG-KRONIS-1da9bb97c6a48049bd9ccb0eeb49c0fc" className="text-indigo-400 hover:underline">Lihat di Notion</Link>
         </div>
       </div>
